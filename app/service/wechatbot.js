@@ -9,13 +9,13 @@ const request = require('request');
 const Service = require('egg').Service;
 
 class WeChatBotService extends Service {
-  triggerMergeRequestMsg() {
-    console.log('triggerMergeRequestMsg in');
+  triggerMsgByContentPlatformPushEvent() {
+    console.log('triggerMsgByContentPlatformPushEvent in');
     const message = {
       msgtype: 'text',
       text: {
-        content: '叮咚！有人发起MR啦',
-        mentioned_mobile_list: [ '18825296369', '13728728225' ],
+        content: '叮咚！订阅号后台有人push代码啦！',
+        mentioned_mobile_list: [ '18825296369', '@all' ],
       },
     };
     request({

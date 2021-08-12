@@ -9,5 +9,5 @@
  */
 module.exports = app => {
   const { router, controller } = app;
-  router.post('/mr', controller.home.index);
+  router.post('/contentplatform/push', controller.home.pushOnContentPlatform);
 };
