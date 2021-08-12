@@ -14,12 +14,13 @@ class WeChatBotService extends Service {
     const message = {
       msgtype: 'text',
       text: {
-        content: '叮咚！订阅号后台有人push代码啦！',
-        mentioned_mobile_list: [ '18825296369', '@all' ],
+        content: '叮咚！订阅号项目有人push代码啦！',
+        // mentioned_mobile_list: [ '18825296369', '@all' ],
+        mentioned_mobile_list: [ '@all' ],
       },
     };
     request({
-      url: 'https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=8e47ae35-cc55-4206-b83d-f6a0d76949c2',
+      url: 'https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=7d0b684f-8f86-4af0-a859-f6e0bbc2865f',
       method: 'POST',
       headers: {
         'content-type': 'application/json',
