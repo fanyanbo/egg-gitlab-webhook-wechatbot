@@ -1,3 +1,7 @@
+/*
+ * @Author: Kuiper
+ * @Date: 2021-08-12 15:00:39
+ */
 'use strict';
 
 /**
@@ -5,5 +9,5 @@
  */
 module.exports = app => {
   const { router, controller } = app;
-  router.get('/', controller.home.index);
+  router.post('/mr', controller.home.index);
 };
