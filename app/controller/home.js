@@ -16,8 +16,15 @@ class HomeController extends Controller {
   async pushOnContentPlatform() {
     const { ctx } = this;
     ctx.service.wechatbot.triggerMsgByContentPlatformPushEvent();
-    ctx.body = 'hi, kuiper';
+    ctx.body = 'hi, pushOnContentPlatform';
   }
+
+  async mergeOnContentPlatform() {
+    const { ctx } = this;
+    ctx.service.wechatbot.sendMsgByContentPlatformMergeRequest();
+    ctx.body = 'hi, mergeOnContentPlatform';
+  }
+
 }
 
 module.exports = HomeController;
