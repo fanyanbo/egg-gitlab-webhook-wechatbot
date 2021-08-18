@@ -25,6 +25,12 @@ class HomeController extends Controller {
     ctx.body = 'hi, mergeOnContentPlatform';
   }
 
+  async mergeOnPCShare() {
+    const { ctx } = this;
+    ctx.service.wechatbot.sendMsgByPCShareMergeRequest();
+    ctx.body = 'hi, sendMsgByPCShareMergeRequest';
+  }
+
 }
 
 module.exports = HomeController;

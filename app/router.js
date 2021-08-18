@@ -11,4 +11,5 @@ module.exports = app => {
   const { router, controller } = app;
   router.post('/contentplatform/push', controller.home.pushOnContentPlatform);
   router.post('/contentplatform/merge', controller.home.mergeOnContentPlatform);
+  router.post('/pcshare/merge', controller.home.mergeOnPCShare);
 };
