@@ -14,7 +14,7 @@ class WeChatBotService extends Service {
     const message = {
       msgtype: 'text',
       text: {
-        content: '叮咚！订阅号项目有人push代码啦！',
+        content: '汪汪！订阅号项目有人push代码啦！',
         // mentioned_mobile_list: [ '18825296369', '@all' ],
         mentioned_mobile_list: [ '@all' ],
       },
@@ -34,7 +34,7 @@ class WeChatBotService extends Service {
     const message = {
       msgtype: 'text',
       text: {
-        content: '叮咚！订阅号项目有人发起MergeRequest啦！',
+        content: '汪汪！订阅号项目有人发起MergeRequest啦！',
         // mentioned_mobile_list: [ '18825296369', '@all' ],
         mentioned_mobile_list: [ '@all' ],
       },
@@ -54,7 +54,7 @@ class WeChatBotService extends Service {
     const message = {
       msgtype: 'text',
       text: {
-        content: '叮咚！PC投屏项目有人发起MergeRequest啦！',
+        content: '汪汪！PC投屏项目有人发起MergeRequest啦！',
         // mentioned_mobile_list: [ '18825296369', '@all' ],
         mentioned_mobile_list: [ '@all' ],
       },
